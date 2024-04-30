@@ -182,10 +182,11 @@ class _CategoryScreenState extends State<CategoryScreen> {
           ListView.separated(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
+            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
             itemBuilder: (context, index) {
             return ProductItem(product: products[index],);
           }, separatorBuilder: (context, index) {
-            return SizedBox();
+            return SizedBox(height: 16,);
           }, itemCount: products.length)
         ],
       ),
